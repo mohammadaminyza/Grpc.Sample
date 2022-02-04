@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" Version="4.0.0" />
+    <PackageReference Include="M.YZ.Basement.Core.Domain" Version="6.0.101.1" />
+    <PackageReference Include="M.YZ.Basement.Core.Domain.Toolkits" Version="6.0.101.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\ValueObjects\" />
+    <Folder Include="Courses\Entities\" />
+    <Folder Include="Courses\QueryModels\Inputs\" />
+    <Folder Include="Courses\QueryModels\Outputs\" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Courses\Commands\CreateCourse\" />
+    <Folder Include="Courses\Contracts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="M.YZ.Basement.Core.Contracts" Version="6.0.101.101" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Grpc.Sample.Core.Domain\Grpc.Sample.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

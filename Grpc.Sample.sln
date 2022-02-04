@@ -9,11 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Infra", "02. Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Endpoint", "03. Endpoint", "{56017D5B-836E-462F-86B1-E2D296143902}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Sample.Endpoint", "src\03. Endpoint\Grpc.Sample.Endpoint\Grpc.Sample.Endpoint.csproj", "{37A862A7-1426-42D7-BD99-82BB5F919B9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grpc.Sample.Endpoint", "src\03. Endpoint\Grpc.Sample.Endpoint\Grpc.Sample.Endpoint.csproj", "{37A862A7-1426-42D7-BD99-82BB5F919B9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6704E141-FDB3-4D46-920F-428ED67DD490}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Sample.Core.Domain", "src\01. Core\Grpc.Sample.Core.Domain\Grpc.Sample.Core.Domain.csproj", "{2190AD27-5B3B-44CC-869D-7002AC29937D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grpc.Sample.Core.Domain", "src\01. Core\Grpc.Sample.Core.Domain\Grpc.Sample.Core.Domain.csproj", "{2190AD27-5B3B-44CC-869D-7002AC29937D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{1A5A11C1-0174-4427-91CB-C18C197F7A17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Sample.Core.Contracts", "src\01. Core\Grpc.Sample.Core.Contracts\Grpc.Sample.Core.Contracts.csproj", "{80B61177-E1DC-4696-B083-CC8ACA4E7A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grpc.Sample.Core.ApplicationServices", "src\01. Core\Grpc.Sample.Core.ApplicationServices\Grpc.Sample.Core.ApplicationServices.csproj", "{0EB4E0C3-B154-4C50-9A28-4FA24CFE3741}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{06C6849C-5F0B-45BA-9A64-B131D4191B26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9FCB0EA1-894E-43EB-BAE7-72699F26CF65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +39,14 @@ Global
 		{2190AD27-5B3B-44CC-869D-7002AC29937D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2190AD27-5B3B-44CC-869D-7002AC29937D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2190AD27-5B3B-44CC-869D-7002AC29937D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B61177-E1DC-4696-B083-CC8ACA4E7A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B61177-E1DC-4696-B083-CC8ACA4E7A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B61177-E1DC-4696-B083-CC8ACA4E7A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B61177-E1DC-4696-B083-CC8ACA4E7A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EB4E0C3-B154-4C50-9A28-4FA24CFE3741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EB4E0C3-B154-4C50-9A28-4FA24CFE3741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EB4E0C3-B154-4C50-9A28-4FA24CFE3741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EB4E0C3-B154-4C50-9A28-4FA24CFE3741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +57,10 @@ Global
 		{56017D5B-836E-462F-86B1-E2D296143902} = {6704E141-FDB3-4D46-920F-428ED67DD490}
 		{37A862A7-1426-42D7-BD99-82BB5F919B9F} = {56017D5B-836E-462F-86B1-E2D296143902}
 		{2190AD27-5B3B-44CC-869D-7002AC29937D} = {5C92F9F1-BE36-4BDD-B668-AA3C19C2E211}
+		{80B61177-E1DC-4696-B083-CC8ACA4E7A13} = {5C92F9F1-BE36-4BDD-B668-AA3C19C2E211}
+		{0EB4E0C3-B154-4C50-9A28-4FA24CFE3741} = {5C92F9F1-BE36-4BDD-B668-AA3C19C2E211}
+		{06C6849C-5F0B-45BA-9A64-B131D4191B26} = {55EBDB58-DE6F-42C6-A011-4D6AD6BFFB96}
+		{9FCB0EA1-894E-43EB-BAE7-72699F26CF65} = {55EBDB58-DE6F-42C6-A011-4D6AD6BFFB96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECE727BE-3B79-4EE4-8C77-6C935F1CC8E0}
