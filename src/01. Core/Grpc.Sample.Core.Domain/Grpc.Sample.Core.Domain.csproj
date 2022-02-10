@@ -8,8 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="Ardalis.GuardClauses" Version="4.0.0" />
-    <PackageReference Include="M.YZ.Basement.Core.Domain" Version="6.0.101.1" />
-    <PackageReference Include="M.YZ.Basement.Core.Domain.Toolkits" Version="6.0.101.1" />
+    <PackageReference Include="M.YZ.Basement.Core.Domain" Version="6.0.2-beta.1" />
+    <PackageReference Include="M.YZ.Basement.Core.Domain.Toolkits" Version="6.0.2-beta.1" />
+    <PackageReference Include="M.YZ.Basement.Utilities" Version="6.0.2-beta.1" />
   </ItemGroup>
 
   <ItemGroup>

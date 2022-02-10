@@ -1,17 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
-  </ItemGroup>
+	<ItemGroup>
+	  <None Remove="Courses\Protos\course.proto" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.42.0" />
+		<PackageReference Include="M.YZ.Basement.EndPoints.Web" Version="6.0.2-beta.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\01. Core\Grpc.Sample.Core.ApplicationServices\Grpc.Sample.Core.ApplicationServices.csproj" />
+		<ProjectReference Include="..\..\02. Infra\Data\Grpc.Sample.Infra.Data.Sql.Commands\Grpc.Sample.Infra.Data.Sql.Commands.csproj" />
+		<ProjectReference Include="..\..\02. Infra\Data\Grpc.Sample.Infra.Data.Sql.Queries\Grpc.Sample.Infra.Data.Sql.Queries.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Protobuf Include="Courses\Protos\course.proto" GrpcServices="Server">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Protobuf>
+	</ItemGroup>
 
 </Project>

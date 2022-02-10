@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="M.YZ.Basement.Core.Contracts" Version="6.0.101.101" />
+    <PackageReference Include="M.YZ.Basement.Core.ApplicationServices" Version="6.0.2-beta.1" />
+    <PackageReference Include="M.YZ.Basement.Core.Contracts" Version="6.0.2-beta.1" />
   </ItemGroup>
 
   <ItemGroup>

@@ -7,15 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Courses\CreateCourse\" />
+    <PackageReference Include="M.YZ.Basement.Infra.Data.Sql.Commands" Version="6.0.2-beta.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="M.YZ.Basement.Core.ApplicationServices" Version="6.0.2-beta.1" />
+    <ProjectReference Include="..\..\..\01. Core\Grpc.Sample.Core.Contracts\Grpc.Sample.Core.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Grpc.Sample.Core.Contracts\Grpc.Sample.Core.Contracts.csproj" />
+    <Folder Include="Courses\" />
   </ItemGroup>
 
 </Project>
