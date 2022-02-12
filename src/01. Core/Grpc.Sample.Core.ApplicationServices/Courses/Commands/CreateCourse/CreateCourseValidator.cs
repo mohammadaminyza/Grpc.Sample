@@ -9,12 +9,12 @@ public class CreateCourseValidator : AbstractValidator<CreateCourseCommand>
     public CreateCourseValidator(ITranslator translator)
     {
         RuleFor(c => c.Title)
-            .NotEmpty().WithMessage(translator[""]);
+            .NotEmpty().WithMessage("Title Not Empty");
 
         RuleFor(c => c.Description)
-            .NotEmpty().WithMessage(translator[""]);
+            .NotEmpty().WithMessage("Description Not Empty");
 
         RuleFor(c => c.Rate)
-            .NotEmpty().WithMessage(translator[""]);
+            .NotEmpty().WithMessage("Rate Not Empty");
     }
 }

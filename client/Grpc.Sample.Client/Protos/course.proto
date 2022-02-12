@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option csharp_namespace = "Grpc.Sample.Endpoint";
+
+import "google/protobuf/empty.proto";
+
+package course;
+
+// The greeting service definition.
+service Course {
+	// Sends a greeting
+	rpc GetCourses(GetCoursesRequest) returns (CoursesResponse);
+	rpc CreateCourse (CreateCourseRequest) returns (google.protobuf.Empty);
+}
+
+// The request message
+message GetCoursesRequest{
+	string Title = 1;
+	string Description = 2;
+	int32 Rate = 3;
+}
+
+message CreateCourseRequest{
+	string Title = 1;
+	string Description = 2;
+	int32 Rate = 3;
+}
+
+//The response messages
+
+message CourseResponse{
+	string Title = 1;
+	string Description = 2;
+	int32 Rate = 3;
+}
+
+message CoursesResponse{
+	repeated CourseResponse Courses = 1;
+}

@@ -1,4 +1,5 @@
-﻿using M.YZ.Basement.Infra.Data.Sql.Commands;
+﻿using Grpc.Sample.Core.Domain.Courses.Entities;
+using M.YZ.Basement.Infra.Data.Sql.Commands;
 using Microsoft.EntityFrameworkCore;
 
 namespace Grpc.Sample.Infra.Data.Sql.Commands.Common;
@@ -16,7 +17,8 @@ public class GRpcSampleCommandDbContext : BaseCommandDbContext
     #endregion
 
     #region DbSets
-    
+
+    public DbSet<Course> Courses { get; set; }
 
     #endregion
 
