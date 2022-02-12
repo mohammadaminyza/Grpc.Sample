@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Courses\Commands\CreateCourse\" />
     <Folder Include="Courses\Contracts\" />
+    <Folder Include="Courses\Queries\" />
   </ItemGroup>
 
   <ItemGroup>

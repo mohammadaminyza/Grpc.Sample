@@ -5,7 +5,7 @@ using M.YZ.Basement.Core.ApplicationServices.Commands;
 using M.YZ.Basement.Core.Contracts.ApplicationServices.Commands;
 using M.YZ.Basement.Utilities;
 
-namespace Grpc.Sample.Core.ApplicationServices.Courses.CreateCourse;
+namespace Grpc.Sample.Core.ApplicationServices.Courses.Commands.CreateCourse;
 
 public class CreateCourseCommandHandler : CommandHandler<CreateCourseCommand>
 {

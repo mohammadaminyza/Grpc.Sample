@@ -2,7 +2,7 @@
 using Grpc.Sample.Core.Contracts.Courses.Commands.CreateCourse;
 using M.YZ.Basement.Utilities.Services.Localizations;
 
-namespace Grpc.Sample.Core.ApplicationServices.Courses.CreateCourse;
+namespace Grpc.Sample.Core.ApplicationServices.Courses.Commands.CreateCourse;
 
 public class CreateCourseValidator : AbstractValidator<CreateCourseCommand>
 {
